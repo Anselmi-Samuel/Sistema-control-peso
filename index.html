@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>App control de peso</title>
+</head>
+<body>
+    <!-- FORMULARIO -->
+    
+    <nav class="navbar container navbar-expand-lg ">
+        <h1 class="display-4 text-center text-navbar">Sistema control de peso</h1>
+    </nav>
+    
+    <section class="container container-card">
+        <div class="card col-lg-5">
+            <form id="data-list">
+                <div class="form-group">
+                    <div class="pt-4">
+                        <input type="number" class="form-control" id="peso" placeholder="Igrese su peso en Kg" required>
+                    </div>
+                </div>
+                    
+                <div class="form-group">
+                    <input type="year" class="form-control" id="dates" placeholder="fechas: 22/7/20" required>
+                </div>
+                    
+                <div class="form-group">
+                    <label>- Agrege una Nota Opcional -</label>
+                    <textarea class="form-control" id="notes" rows="3"></textarea>
+                </div>
+                <button type="submit" value="Save" class="btn btn-primary mb-2">Guardar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- TABLA -->
+    <div class="container">
+        <div id="tabla-list">
+
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
